@@ -1,0 +1,21 @@
+package com.example.orderservice;
+
+import lombok.Data;
+
+import javax.persistence.*;
+
+@Data
+@Entity
+@Table(name = "orders")
+public class Order {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+    private String userId;
+    private String productName;
+    private int amount;
+    private int totalPrice;
+    private String address;
+
+}

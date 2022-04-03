@@ -1,0 +1,15 @@
+GET http://localhost:8080/orders
+Accept: application/json
+
+###
+POST http://localhost:8080/orders
+Content-Type: application/json
+
+{
+  "productName": "Macbook 2",
+  "amount": 2,
+  "totalPrice": 8000,
+  "address": "서울시"
+}
+
+###
